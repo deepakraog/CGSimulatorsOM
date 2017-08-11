@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>IBMDoubleConfirm</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AirtelAesEncDec</display-name>
+    <servlet-name>AirtelAesEncDec</servlet-name>
+    <servlet-class>com.onmobile.Airtel.AirtelAesEncDec</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AirtelAesEncDec</servlet-name>
+    <url-pattern>/AirtelAesEncDec</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IBMPortal</display-name>
+    <servlet-name>IBMPortal</servlet-name>
+    <servlet-class>com.onmobile.Airtel.IBMPortal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IBMPortal</servlet-name>
+    <url-pattern>/IBMPortal</url-pattern>
+  </servlet-mapping>
+</web-app>
